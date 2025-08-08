@@ -1,0 +1,1174 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='logistics_data_for_tableau' inline='true' name='federated.1y3gn4h01sl44310cs2661feaoqa' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='logistics_data_for_tableau' name='textscan.14xinmg11b7wq71093cke0miij3b'>
+            <connection class='textscan' directory='C:/Users/srava/Downloads/logistic_dataset' filename='logistics_data_for_tableau.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.14xinmg11b7wq71093cke0miij3b' name='logistics_data_for_tableau.csv' table='[logistics_data_for_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='datetime' name='Timestamp' ordinal='0' />
+            <column datatype='real' name='Vehicle GPS Latitude' ordinal='1' />
+            <column datatype='real' name='Vehicle GPS Longitude' ordinal='2' />
+            <column datatype='real' name='Fuel Consumption Rate' ordinal='3' />
+            <column datatype='real' name='ETA Variation (hours)' ordinal='4' />
+            <column datatype='real' name='Traffic Congestion Level' ordinal='5' />
+            <column datatype='real' name='Warehouse Inventory Level' ordinal='6' />
+            <column datatype='real' name='Loading/Unloading Time' ordinal='7' />
+            <column datatype='string' name='Handling Equipment Availability' ordinal='8' />
+            <column datatype='string' name='Order Fulfillment Status' ordinal='9' />
+            <column datatype='real' name='Weather Condition Severity' ordinal='10' />
+            <column datatype='real' name='Port Congestion Level' ordinal='11' />
+            <column datatype='real' name='Shipping Costs' ordinal='12' />
+            <column datatype='real' name='Supplier Reliability Score' ordinal='13' />
+            <column datatype='real' name='Lead Time (days)' ordinal='14' />
+            <column datatype='real' name='Historical Demand' ordinal='15' />
+            <column datatype='real' name='IoT Temperature' ordinal='16' />
+            <column datatype='string' name='Cargo Condition Status' ordinal='17' />
+            <column datatype='real' name='Route Risk Level' ordinal='18' />
+            <column datatype='real' name='Customs Clearance Time' ordinal='19' />
+            <column datatype='real' name='Driver Behavior Score' ordinal='20' />
+            <column datatype='real' name='Fatigue Monitoring Score' ordinal='21' />
+            <column datatype='real' name='Disruption Likelihood Score' ordinal='22' />
+            <column datatype='real' name='Delay Probability' ordinal='23' />
+            <column datatype='string' name='Risk Classification' ordinal='24' />
+            <column datatype='real' name='Delivery Time Deviation' ordinal='25' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Timestamp]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Timestamp</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle GPS Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Vehicle GPS Latitude]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Vehicle GPS Latitude</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle GPS Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Vehicle GPS Longitude]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Vehicle GPS Longitude</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel Consumption Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fuel Consumption Rate]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Fuel Consumption Rate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ETA Variation (hours)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ETA Variation (hours)]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>ETA Variation (hours)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Traffic Congestion Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Traffic Congestion Level]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Traffic Congestion Level</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Warehouse Inventory Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Warehouse Inventory Level]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Warehouse Inventory Level</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loading/Unloading Time</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Loading/Unloading Time]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Loading/Unloading Time</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Handling Equipment Availability</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Handling Equipment Availability]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Handling Equipment Availability</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Fulfillment Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Order Fulfillment Status]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Order Fulfillment Status</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weather Condition Severity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Weather Condition Severity]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Weather Condition Severity</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Port Congestion Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Port Congestion Level]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Port Congestion Level</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shipping Costs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Shipping Costs]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Shipping Costs</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supplier Reliability Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Supplier Reliability Score]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Supplier Reliability Score</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lead Time (days)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lead Time (days)]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Lead Time (days)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Historical Demand</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Historical Demand]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Historical Demand</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IoT Temperature</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IoT Temperature]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>IoT Temperature</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cargo Condition Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Cargo Condition Status]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Cargo Condition Status</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Route Risk Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Route Risk Level]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Route Risk Level</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customs Clearance Time</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Customs Clearance Time]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Customs Clearance Time</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Driver Behavior Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Driver Behavior Score]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Driver Behavior Score</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fatigue Monitoring Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fatigue Monitoring Score]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Fatigue Monitoring Score</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disruption Likelihood Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Disruption Likelihood Score]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Disruption Likelihood Score</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delay Probability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delay Probability]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Delay Probability</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Risk Classification</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Risk Classification]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Risk Classification</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delivery Time Deviation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delivery Time Deviation]</local-name>
+            <parent-name>[logistics_data_for_tableau.csv]</parent-name>
+            <remote-alias>Delivery Time Deviation</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Risk Classification]' role='dimension' type='nominal' />
+      <column datatype='real' name='[Route Risk Level]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Vehicle GPS Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Vehicle GPS Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='logistics_data_for_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]' role='measure' type='quantitative' />
+      <column-instance column='[Risk Classification]' derivation='None' name='[none:Risk Classification:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Route Risk Level]' derivation='Sum' name='[sum:Route Risk Level:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/srava/AppData/Local/Temp/TableauTemp/#TableauTemp_1sxxgal0k6t11w1b7rmns0zj83tp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/08/2025 04:28:17 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Timestamp</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Timestamp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Timestamp</remote-alias>
+              <ordinal>0</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle GPS Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Vehicle GPS Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle GPS Latitude</remote-alias>
+              <ordinal>1</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle GPS Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Vehicle GPS Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle GPS Longitude</remote-alias>
+              <ordinal>2</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fuel Consumption Rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Fuel Consumption Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fuel Consumption Rate</remote-alias>
+              <ordinal>3</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30531</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ETA Variation (hours)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ETA Variation (hours)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ETA Variation (hours)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Traffic Congestion Level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Traffic Congestion Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Traffic Congestion Level</remote-alias>
+              <ordinal>5</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Warehouse Inventory Level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Warehouse Inventory Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Warehouse Inventory Level</remote-alias>
+              <ordinal>6</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Loading/Unloading Time</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Loading/Unloading Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Loading/Unloading Time</remote-alias>
+              <ordinal>7</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Handling Equipment Availability</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Handling Equipment Availability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Handling Equipment Availability</remote-alias>
+              <ordinal>8</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order Fulfillment Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order Fulfillment Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order Fulfillment Status</remote-alias>
+              <ordinal>9</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weather Condition Severity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Weather Condition Severity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weather Condition Severity</remote-alias>
+              <ordinal>10</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Port Congestion Level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Port Congestion Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Port Congestion Level</remote-alias>
+              <ordinal>11</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Shipping Costs</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Shipping Costs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Shipping Costs</remote-alias>
+              <ordinal>12</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supplier Reliability Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Supplier Reliability Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supplier Reliability Score</remote-alias>
+              <ordinal>13</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lead Time (days)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lead Time (days)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lead Time (days)</remote-alias>
+              <ordinal>14</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Historical Demand</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Historical Demand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Historical Demand</remote-alias>
+              <ordinal>15</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IoT Temperature</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[IoT Temperature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IoT Temperature</remote-alias>
+              <ordinal>16</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cargo Condition Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Cargo Condition Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cargo Condition Status</remote-alias>
+              <ordinal>17</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Route Risk Level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Route Risk Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Route Risk Level</remote-alias>
+              <ordinal>18</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customs Clearance Time</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Customs Clearance Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customs Clearance Time</remote-alias>
+              <ordinal>19</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Driver Behavior Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Driver Behavior Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Driver Behavior Score</remote-alias>
+              <ordinal>20</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fatigue Monitoring Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Fatigue Monitoring Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fatigue Monitoring Score</remote-alias>
+              <ordinal>21</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Disruption Likelihood Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Disruption Likelihood Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Disruption Likelihood Score</remote-alias>
+              <ordinal>22</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delay Probability</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Delay Probability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delay Probability</remote-alias>
+              <ordinal>23</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Risk Classification</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Risk Classification]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Risk Classification</remote-alias>
+              <ordinal>24</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delivery Time Deviation</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Delivery Time Deviation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delivery Time Deviation</remote-alias>
+              <ordinal>25</ordinal>
+              <family>logistics_data_for_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32065</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Risk Classification:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;High Risk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Moderate Risk&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Low Risk&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[sum:Route Risk Level:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>20625.197866699509</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>14956.594744880951</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>19164.492708913273</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>20692.447091236801</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>20241.573445947233</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>15039.079763538119</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>20334.416051829427</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>20703.934026808063</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>20339.118572756699</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>15662.991509330881</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>20956.510970509691</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>15775.337067832081</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='logistics_data_for_tableau.csv' id='logistics_data_for_tableau.csv_BE1814190ED74CDBB0181A34B2A621F2'>
+            <properties context=''>
+              <relation connection='textscan.14xinmg11b7wq71093cke0miij3b' name='logistics_data_for_tableau.csv' table='[logistics_data_for_tableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='datetime' name='Timestamp' ordinal='0' />
+                  <column datatype='real' name='Vehicle GPS Latitude' ordinal='1' />
+                  <column datatype='real' name='Vehicle GPS Longitude' ordinal='2' />
+                  <column datatype='real' name='Fuel Consumption Rate' ordinal='3' />
+                  <column datatype='real' name='ETA Variation (hours)' ordinal='4' />
+                  <column datatype='real' name='Traffic Congestion Level' ordinal='5' />
+                  <column datatype='real' name='Warehouse Inventory Level' ordinal='6' />
+                  <column datatype='real' name='Loading/Unloading Time' ordinal='7' />
+                  <column datatype='string' name='Handling Equipment Availability' ordinal='8' />
+                  <column datatype='string' name='Order Fulfillment Status' ordinal='9' />
+                  <column datatype='real' name='Weather Condition Severity' ordinal='10' />
+                  <column datatype='real' name='Port Congestion Level' ordinal='11' />
+                  <column datatype='real' name='Shipping Costs' ordinal='12' />
+                  <column datatype='real' name='Supplier Reliability Score' ordinal='13' />
+                  <column datatype='real' name='Lead Time (days)' ordinal='14' />
+                  <column datatype='real' name='Historical Demand' ordinal='15' />
+                  <column datatype='real' name='IoT Temperature' ordinal='16' />
+                  <column datatype='string' name='Cargo Condition Status' ordinal='17' />
+                  <column datatype='real' name='Route Risk Level' ordinal='18' />
+                  <column datatype='real' name='Customs Clearance Time' ordinal='19' />
+                  <column datatype='real' name='Driver Behavior Score' ordinal='20' />
+                  <column datatype='real' name='Fatigue Monitoring Score' ordinal='21' />
+                  <column datatype='real' name='Disruption Likelihood Score' ordinal='22' />
+                  <column datatype='real' name='Delay Probability' ordinal='23' />
+                  <column datatype='string' name='Risk Classification' ordinal='24' />
+                  <column datatype='real' name='Delivery Time Deviation' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Shipping Costs by Risk Classification</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_data_for_tableau' name='federated.1y3gn4h01sl44310cs2661feaoqa' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1y3gn4h01sl44310cs2661feaoqa'>
+            <column datatype='string' name='[Risk Classification]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Shipping Costs]' role='measure' type='quantitative' />
+            <column-instance column='[Risk Classification]' derivation='None' name='[none:Risk Classification:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Shipping Costs]' derivation='Sum' name='[sum:Shipping Costs:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1y3gn4h01sl44310cs2661feaoqa].[sum:Shipping Costs:qk]' />
+              <color column='[federated.1y3gn4h01sl44310cs2661feaoqa].[none:Risk Classification:nk]' />
+              <text column='[federated.1y3gn4h01sl44310cs2661feaoqa].[none:Risk Classification:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1y3gn4h01sl44310cs2661feaoqa].[none:Risk Classification:nk]</field>
+                  <field>[federated.1y3gn4h01sl44310cs2661feaoqa].[sum:Shipping Costs:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Low Risk&quot;</value>
+                <value>1440300.6345064011</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{C6D95DB4-2BBD-4CE3-B9FA-719ECA6B9597}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Average Delivery Deviation Over Time by Route Risk Level</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='logistics_data_for_tableau' name='federated.1y3gn4h01sl44310cs2661feaoqa' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1y3gn4h01sl44310cs2661feaoqa'>
+            <column datatype='real' name='[Delivery Time Deviation]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Route Risk Level]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[Timestamp]' role='dimension' type='ordinal' />
+            <column-instance column='[Delivery Time Deviation]' derivation='Avg' name='[avg:Delivery Time Deviation:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Timestamp]' derivation='Month' name='[mn:Timestamp:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Route Risk Level]' derivation='Sum' name='[sum:Route Risk Level:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1y3gn4h01sl44310cs2661feaoqa].[sum:Route Risk Level:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>14956.594744880951</bucket>
+              <bucket>15039.079763538119</bucket>
+              <bucket>15662.991509330881</bucket>
+              <bucket>15775.337067832081</bucket>
+              <bucket>19164.492708913273</bucket>
+              <bucket>20241.573445947233</bucket>
+              <bucket>20334.416051829427</bucket>
+              <bucket>20339.118572756699</bucket>
+              <bucket>20625.197866699509</bucket>
+              <bucket>20692.447091236801</bucket>
+              <bucket>20703.934026808063</bucket>
+              <bucket>20956.510970509691</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1y3gn4h01sl44310cs2661feaoqa].[mn:Timestamp:ok]' value='87' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1y3gn4h01sl44310cs2661feaoqa].[sum:Route Risk Level:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1y3gn4h01sl44310cs2661feaoqa].[avg:Delivery Time Deviation:qk]</rows>
+        <cols>[federated.1y3gn4h01sl44310cs2661feaoqa].[mn:Timestamp:ok]</cols>
+      </table>
+      <simple-id uuid='{4D1D416F-8F68-4A26-BD90-73405209FE52}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97142' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+            <zone h='97142' id='5' type-v2='layout-basic' w='78307' x='1231' y='1429'>
+              <zone h='52857' id='3' name='Sheet 1' w='78307' x='1231' y='1429'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44285' id='9' name='Sheet 2' w='78307' x='1231' y='54286'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='125' h='97142' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='19231' x='79538' y='1429'>
+              <zone h='15358' id='8' name='Sheet 1' pane-specification-id='0' param='[federated.1y3gn4h01sl44310cs2661feaoqa].[none:Risk Classification:nk]' type-v2='color' w='19231' x='79538' y='1429'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='260' h='47858' id='10' is-fixed='true' name='Sheet 2' pane-specification-id='0' param='[federated.1y3gn4h01sl44310cs2661feaoqa].[sum:Route Risk Level:ok]' type-v2='color' w='19231' x='79538' y='16787'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97142' id='11' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1429'>
+                <zone fixed-size='280' h='52857' id='3' is-fixed='true' name='Sheet 1' w='78307' x='1231' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15358' id='8' name='Sheet 1' pane-specification-id='0' param='[federated.1y3gn4h01sl44310cs2661feaoqa].[none:Risk Classification:nk]' type-v2='color' w='19231' x='79538' y='1429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44285' id='9' is-fixed='true' name='Sheet 2' w='78307' x='1231' y='54286'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='47500' id='10' name='Sheet 2' pane-specification-id='2' param='[federated.1y3gn4h01sl44310cs2661feaoqa].[sum:Route Risk Level:ok]' type-v2='color' w='19231' x='79538' y='16787'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4440013B-98E7-48F2-B6CB-AE2BD01BF3F8}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='0.875' source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1y3gn4h01sl44310cs2661feaoqa].[none:Risk Classification:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D9A74F70-F44F-4AC9-A132-33FEDF43E8CB}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1y3gn4h01sl44310cs2661feaoqa].[sum:Route Risk Level:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9F7DF209-1378-49B7-9C91-D12BEFC250DB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{360442E0-BBC1-40A7-B4BB-4F54C22BB64E}' />
+    </window>
+  </windows>
+</workbook>
